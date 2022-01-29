@@ -7,8 +7,8 @@ The ability to study the state, properties, and relationship between these objec
 
 - Kaggle Dataset [adityajn105/flickr8k](https://www.kaggle.com/adityajn105/flickr8k/download)
 ## Model Description
-- Image Feature extraction using VGG16
-- Sentence Feature using LSTM layer
+- VGG16 (Image Feature Extractor)
+- LSTM layer(for Sentence)
 - Concatenate images feature and sentence feature and train Neural Network to predict next word
 ## Download Trained Model
 

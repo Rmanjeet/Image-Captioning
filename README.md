@@ -19,4 +19,4 @@ The ability to study the state, properties, and relationship between these objec
 - Download the vocabulary and place it in same folder
 - [https://drive.google.com/file/d/1-9UQlNl_aP3IWvmQxea6EQdunArkN4uf/view?usp=sharing](https://drive.google.com/file/d/1-9UQlNl_aP3IWvmQxea6EQdunArkN4uf/view?usp=sharing)
 ## Demo
-[**Demo on youtube**](https://www.youtube.com/watch?v=gieG6AQwoH8)
+[**Demo (video)**](https://www.youtube.com/watch?v=gieG6AQwoH8)

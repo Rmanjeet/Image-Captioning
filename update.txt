@@ -1,0 +1,41 @@
+# Add and Remove Column to Employee_Master1 #################################
+
+ALTER TABLE employee_master1 ADD TyMemo bigint, Advisery bigint, Forms bigint, OSB bigint;
+
+ALTER TABLE employee_master1 DROP COLUMN TyMemo, COLUMN Advisery, COLUMN Forms, COLUMN OSB;
+
+# Increase upload file size ####################################################
+
+<system.web>
+	<customErrors mode="RemoteOnly" defaultRedirect="login.aspx"/>
+	<compilation debug="true" targetFramework="4.8"/>
+	<httpRuntime maxRequestLength="1048576" />
+</system.web>
+
+# badge notification ########################################################
+<asp:Label ID="notice_badge" CssClass="badge bg-danger text-white" runat="server" Style="position: absolute;z-index: 10;margin-left: -10px;margin-top: -5px;"  Text="5" Visible="false"></asp:Label>
+
+# user active update ##############################################################
+void update_status(string em_designation)
+        {
+            try 
+            {
+                using (SqlConnection Con = new SqlConnection(ConString))
+                {
+                    string date = DateTime.Now.ToString();
+                    SqlCommand cmd = new SqlCommand("update employee_master1 set Forms='"+date.ToString()+ "' where Em_Designation='"+em_designation.ToString()+"'", Con);
+                    Con.Open();
+                    cmd.ExecuteNonQuery();
+                    Con.Close();
+                }
+            }
+            catch { }
+        }
+
+# badge update #######################################################################
+select (select Forms from employee_master1 where em_designation='dpmlit3') as Forms,* from emails where toaddress='dpmlit3' and [Read] ='N'
+
+##########¡í###################################
+string iString = "2005-05-05 22:12 PM";
+DateTime oDate = DateTime.ParseExact(iString, "yyyy-MM-dd HH:mm tt",null);
+MessageBox.Show(oDate.ToString

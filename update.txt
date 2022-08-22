@@ -35,7 +35,11 @@ void update_status(string em_designation)
 # badge update #######################################################################
 select (select Forms from employee_master1 where em_designation='dpmlit3') as Forms,* from emails where toaddress='dpmlit3' and [Read] ='N'
 
-##########¡í###################################
+##########Â¡Ã­###################################
 string iString = "2005-05-05 22:12 PM";
 DateTime oDate = DateTime.ParseExact(iString, "yyyy-MM-dd HH:mm tt",null);
 MessageBox.Show(oDate.ToString
+#####â„–#############################
+
+Select * from event_calendar order by startdate desc
+
